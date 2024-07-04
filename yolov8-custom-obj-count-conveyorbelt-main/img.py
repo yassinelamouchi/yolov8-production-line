@@ -4,7 +4,7 @@ cpt = 0
 maxFrames = 50 # if you want 5 frames only.
 
 count=0
-cap=cv2.VideoCapture('9716407-hd_1920_1080_25fps.mp4')
+cap=cv2.VideoCapture('9716408-hd_1920_1080_25fps.mp4')
 while cpt < maxFrames:
     ret, frame = cap.read()
     if not ret:
@@ -16,7 +16,7 @@ while cpt < maxFrames:
 #    time.sleep(0.01)
 #    frame=cv2.flip(frame,1)
     cv2.imshow("test window", frame) # show image in window
-    cv2.imwrite(r"C:\summer internship\yolov8\yolov8-custom-obj-count-conveyorbelt-main\frames\pack-b_%d.jpg" %cpt, frame)
+    cv2.imwrite(r"C:\summer internship\yolov8\virtual environment\yolov8-custom-obj-count-conveyorbelt-main\frames\pack-b_%d.jpg" %cpt, frame)
 #    time.sleep(0.5)
     cpt += 1
     if cv2.waitKey(5)&0xFF==27:
